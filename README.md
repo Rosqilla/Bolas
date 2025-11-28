@@ -2,7 +2,7 @@
 
 Simulador de física de bolas en Java con arquitectura MVC (Modelo-Vista-Controlador).
 
-## 🎮 Controles
+##  Controles
 
 ### Controles de Panel
 - **Añadir Bola**: Crea una nueva bola con configuración actual
@@ -26,7 +26,7 @@ Simulador de física de bolas en Java con arquitectura MVC (Modelo-Vista-Control
 - **W**: Acelerar (+10% velocidad)
 - **S**: Decelerar (-10% velocidad)
 
-## 🎯 Características
+##  Características
 
 ### Física
 - **Velocidades**: Las bolas tienen velocidad aleatoria inicial (±150 px/s)
@@ -46,7 +46,7 @@ Simulador de física de bolas en Java con arquitectura MVC (Modelo-Vista-Control
 - Sincronización segura con locks para evitar condiciones de carrera
 - Sistema de generación automática mediante ScheduledExecutorService
 
-## 🏗️ Arquitectura
+##  Arquitectura
 
 ```
 src/
@@ -64,7 +64,7 @@ src/
     └── Viewer.java         # Canvas de visualización
 ```
 
-## 🚀 Compilación y Ejecución
+##  Compilación y Ejecución
 
 ### Compilar
 ```bash
@@ -80,14 +80,14 @@ java -cp bin Animation
 - Java JDK 21 o superior
 - Sistema operativo: Windows/Linux/macOS
 
-## 📝 Notas Técnicas
+##  Notas Técnicas
 
 - **Unidades internas**: Velocidad en px/ms, aceleración en px/ms²
 - **Tick de física**: 10 milisegundos
 - **Framerate objetivo**: ~60 FPS
 - **Thread model**: Un thread por bola + thread de viewer + EDT de Swing
 
-## 🎨 Personalización
+##  Personalización
 
 El código está diseñado para ser fácilmente modificable:
 - Cambia los rangos de velocidad inicial en `Controller.addBallWithControlSettings()`
